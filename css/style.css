@@ -13,19 +13,48 @@
 
 .wrapper {
     background-color: var(--white);
-    width: 600px;
+    width: 500px;
     height: fit-content;
+    width: fit-content;
     padding: 1rem;
     border-radius: 10px;
+    font-size: 1.3rem;
 }
 
 h1 {
     margin-bottom: 1.5rem;
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--cyan);
 }
 
 #todo-list .todo.done {
     color: var(--violet);
-    text-decoration: line-through;;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.add-todo {
+    margin-top: 1rem;
+    min-width: 400px;
+}
+
+input {
+    width: 95%;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid var(--cyan);
+    padding-left: 1rem;
+    font-family: inherit;
+    font-size: .85rem;
+    color: var(--blue);
+}
+
+.btn-add {
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--cyan);
+    background-color: var(--cyan);
+    color: var(--white);
+    font-size: 0.9rem;
+    border-radius: 0 5px 5px 0;
 }

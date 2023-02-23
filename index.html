@@ -33,14 +33,14 @@
             <h1>{{titol}}</h1>
 
             <div class="wrapper d-flex justify-content-center align-items-center flex-column">
-                <ul class="list-unstyled" id="todo-list">
+                <ul class="list-unstyled d-flex justify-content-center align-items-start flex-column" id="todo-list">
                     <li v-for="(todo,index) in  todoList" class="todo fw-bold" :class="todo.done ? 'done' : '' ">
                         {{ todo.text }}
                     </li>
                 </ul>
-                <div class="add-todo">
+                <div class="add-todo d-flex text-center">
                     <input type="text" placeholder="new task" v-model.trim="newTodoText" name="newTodoText">
-                    <button @click="addTodo">+</button>
+                    <button @click="addTodo" class="btn-add d-flex align-items-center">Add</button>
                 </div>
             </div>
         </div>

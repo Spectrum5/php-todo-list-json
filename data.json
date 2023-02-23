@@ -1,8 +1,1 @@
-[
-{"text":"HTML","done":true},
-{"text":"CSS","done":true},
-{"text":"Responsive Design","done":true},
-{"text":"Javascript","done":true},
-{"text":"PHP","done":true},
-{"text":"Laravel","done":false}
-]
+[{"text":"HTML","done":true},{"text":"CSS","done":true},{"text":"Responsive Design","done":true},{"text":"Javascript","done":true},{"text":"PHP","done":true},{"text":"Laravel","done":false},{"text":"","done":false}]
