@@ -24,3 +24,8 @@ h1 {
     font-size: 3rem;
     color: var(--cyan);
 }
+
+#todo-list .todo.done {
+    color: var(--violet);
+    text-decoration: line-through;;
+}
