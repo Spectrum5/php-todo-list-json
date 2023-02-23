@@ -17,9 +17,7 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <!-- Fontawesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -33,16 +31,19 @@
             <h1>{{titol}}</h1>
 
             <div class="wrapper d-flex justify-content-center align-items-center flex-column">
+
                 <ul class="list-unstyled d-flex justify-content-center align-items-start flex-column w-100" id="todo-list">
-                    <li v-for="(todo,index) in  todoList" class="todo fw-bold" :class="todo.done ? 'done' : '' " @click="toggleTodo(index)">
-                        {{ todo.text }}
-                        <span @click.stop="deleteTodo(index)">x</span>
+                    <li v-for="(todo,index) in  todoList" class="todo fw-bold d-flex justify-content-between align-items-start" :class="todo.done ? 'done' : '' " @click="toggleTodo(index)">
+                        <span class="todo">{{ todo.text }}</span>
+                        <span @click.stop="deleteTodo(index)" class="trash-can-span"><i class="fa-solid fa-trash-can"></i></span>
                     </li>
                 </ul>
+
                 <div class="add-todo d-flex text-center">
                     <input type="text" placeholder="new task" v-model.trim="newTodoText" name="newTodoText">
-                    <button @click="addTodo" class="btn-add d-flex align-items-center">Add</button>
+                    <button @click="addTodo" class="btn-add d-flex align-items-center">Add</i></button>
                 </div>
+                
             </div>
         </div>
     </div>

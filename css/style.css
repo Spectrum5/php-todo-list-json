@@ -3,7 +3,6 @@
     --violet: #7c8ab6;
     --cyan: #b1dde9;
     --orange: #df8869;
-    --brown: #846460;
     --white: #ffffff;
 }
 
@@ -57,4 +56,18 @@ input {
     color: var(--white);
     font-size: 0.9rem;
     border-radius: 0 5px 5px 0;
+}
+
+li {
+    cursor: pointer;
+    width: 80%;
+    margin: .25rem auto;
+    padding: .15rem .45rem;
+    border: 2px solid var(--cyan);
+    border-radius: 5px;
+}
+
+.fa-trash-can {
+    color: var(--orange);
+    font-size: 1rem
 }
