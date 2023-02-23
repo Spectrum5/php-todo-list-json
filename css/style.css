@@ -1,0 +1,20 @@
+:root {
+    --blue: #2B4570;
+    --violet: #7180AC;
+    --cyan: #A8D0DB;
+    --orange: #E49273;
+    --brown: #A37A74;
+    --white: #ffffff;
+}
+
+.container-fluid {
+    background-color: var(--blue);
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    color: var(--cyan);
+}

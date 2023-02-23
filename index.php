@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="it">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +25,14 @@
     </head>
 
     <body>
-        
+        <div id="app">
+            <div class="container-fluid d-flex justify-content-center align-items-center w-100">
+                <h1>{{titol}}</h1>
+                
+            </div>
+        </div>
     </body>
+
+    <script src="./js/scripts.js"></script>
+
 </html>
