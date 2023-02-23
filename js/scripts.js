@@ -4,6 +4,11 @@ createApp({
   data() {
     return {
       titol: 'Todo List',
+        todoList: [],
+        task:{
+            text: '',
+            done: false
+        }
     }
   },
   methods:{
@@ -11,9 +16,6 @@ createApp({
   },
   created() {
     axios
-      .get('./js/server.php')
-      .then((response) => {
-        console.log(response);
-      })
+      .get('./server.php')
   }
 }).mount('#app')

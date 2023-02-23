@@ -1,5 +1,4 @@
 <?php
 
-    $todoListString = file_get_contents('./database.json');
-    
+$learn = file_get_contents('data.json');
 ?>

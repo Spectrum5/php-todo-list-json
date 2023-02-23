@@ -26,9 +26,18 @@
 
     <body>
         <div id="app">
-            <div class="container-fluid d-flex justify-content-center align-items-center w-100">
+            <div class="container-fluid d-flex justify-content-center align-items-center w-100 flex-column vh-100">
                 <h1>{{titol}}</h1>
-                
+                <!-- {{todoList.length}} -->
+                <div class="wrapper d-flex justify-content-center align-items-center flex-column">
+                    <ul>
+                        <!-- <li v-for="task in todoList">{{task}}</li> -->
+                    </ul>
+                    <div>
+                        <input type="text">
+                        <button>Save</button>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
