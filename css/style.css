@@ -1,6 +1,6 @@
 :root {
     --blue: #29436b;
-    --violet: #7c8ab6;
+    --violet: #7c7db6;
     --cyan: #b1dde9;
     --orange: #df8869;
     --white: #ffffff;
@@ -26,7 +26,7 @@ h1 {
     color: var(--cyan);
 }
 
-#todo-list .todo.done {
+.done {
     color: var(--violet);
     text-decoration: line-through;
     font-weight: 500;
@@ -70,4 +70,10 @@ li {
 .fa-trash-can {
     color: var(--orange);
     font-size: 1rem
+}
+
+input::placeholder{
+    color: var(--blue);
+    opacity: .5;
+    font-family: inherit;
 }

@@ -40,10 +40,10 @@
                 </ul>
 
                 <div class="add-todo d-flex text-center">
-                    <input type="text" placeholder="new task" v-model.trim="newTodoText" name="newTodoText">
+                    <input type="text" placeholder="add new task" v-model.trim="newTodoText" name="newTodoText" @keyup.enter ="addTodo">
                     <button @click="addTodo" class="btn-add d-flex align-items-center">Add</i></button>
                 </div>
-                
+
             </div>
         </div>
     </div>
