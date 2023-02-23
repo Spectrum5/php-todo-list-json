@@ -1,4 +1,6 @@
 <?php
+//converto il testo json in un array php
+$todo_list = json_decode($data, true);
 
-$learn = file_get_contents('data.json');
+var_dump($todo_list);
 ?>

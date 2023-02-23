@@ -28,7 +28,7 @@
         <div id="app">
             <div class="container-fluid d-flex justify-content-center align-items-center w-100 flex-column vh-100">
                 <h1>{{titol}}</h1>
-                <!-- {{todoList.length}} -->
+                {{todoList.length}}
                 <div class="wrapper d-flex justify-content-center align-items-center flex-column">
                     <ul>
                         <!-- <li v-for="task in todoList">{{task}}</li> -->

@@ -1,21 +1,20 @@
-const { createApp } = Vue ; 
+const { createApp } = Vue;
 
 createApp({
   data() {
     return {
       titol: 'Todo List',
-        todoList: [],
-        task:{
-            text: '',
-            done: false
-        }
+      todoList: []
     }
   },
-  methods:{
+  methods: {
 
   },
   created() {
-    axios
-      .get('./server.php')
+    //chiamata al server per accedere ai dati con axios
+    axios.get('server.php').then((res) => {
+      console.log(res.data);
+      this.todoList = res.data;
+    })
   }
 }).mount('#app')
